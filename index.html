@@ -4,40 +4,43 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
       <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
       <link rel="stylesheet" href="./assets/css/style.css" />
       <title>Weather Dashboard</title>
    </head>
+
    <body class="flex-column min-100-vh">
       <header class="hero">
          <h1 class="app-title"><i class="fa fa-cloud-sun"></i> Weather Dashboard</h1>
+         <p>Search for a city to see it's weather forecast!</p>
       </header>
-<main class="flex-row justify-space-between">
-         <main class="col-12 col-md-4">
+
+      <main class="flex-row justify-space-between">
+         <div class="col-12 col-md-3">
             <div class="card">
-               <h3 class="card-header text-uppercase">Search By City: </h3>
+               <h3 class="card-header text-uppercase">Search By City:</h3>
                <form id="user-form" class="card-body">
                   <label class="form-label" for="cityname">User Input</label>
                   <input class="form-input" name="cityname" id="cityname" type="text" autofocus="true" />
                   <button class="btn" type="submit">Search</button>
                </form>
-               <h3 class="card-header text-uppercase"> </h3>
+               <h3 class="card-header text-uppercase"></h3>
                <div class="card-body" id="city-buttons">
-
-                  <button class="btn" data-language="javascript">Previous City</button>
-                  <button class="btn" data-language="javascript">Previous City 02</button>
-                  
+                  <button class="btn" data-city="javascript">Previous City</button>
+                  <button class="btn" data-city="javascript">Previous City 02</button>
                </div>
             </div>
+         </div>
 
-         
-            <div class="col-12 col-md-8">
-            <h2 class="subtitle">Atlanta: <span id="repo-search-term"></span></h2>
-            <div class="list-group" id="repos-container"></div>
-            </div>
-         </main>
+         <div class="flex-row col-12 col-md-9" id="right-container">
+            <!-- <div class="card" id="current-date">
+               <h2 class="card-header subtitle" id="subtitle"><span id="city-search-term"></span></h2>
+               <div class="list-group" id="city-container"></div>
+            </div> -->
+         </div>
+      </main>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
       <script src="assets/js/script.js"></script>
    </body>
 </html>
