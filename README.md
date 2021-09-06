@@ -28,7 +28,7 @@ This is a simple weather dashboard application that allows a user to retrieve we
 
 The following animation demonstrates the application functionality:
 
-<!-- ![code quiz](./assets/mock-up/mock-up.gif) -->
+![weather-mock-up](./assets/mock-up/my-mock-up.png)
 
 ### Review
 
